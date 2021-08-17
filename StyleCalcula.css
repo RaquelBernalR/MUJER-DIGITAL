@@ -1,0 +1,19 @@
+<body>{
+    background-color: rgb(58, 224, 224);
+    font-size: 20px;
+    margin-left: 142px;
+
+}
+</body>
+
+#colortotal{
+    color: rgb(1, 63, 58);
+}
+
+.operador{
+  background-color: rgb(98, 113, 184);
+  font-weight: bold;
+  display: flexbox;
+  justify-content: space-between;
+  border-bottom-style: double;
+}
