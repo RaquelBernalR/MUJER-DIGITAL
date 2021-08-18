@@ -1,19 +1,30 @@
-<body>{
-    background-color: rgb(58, 224, 224);
-    font-size: 20px;
-    margin-left: 142px;
-
-}
-</body>
-
-#colortotal{
-    color: rgb(1, 63, 58);
-}
-
-.operador{
-  background-color: rgb(98, 113, 184);
-  font-weight: bold;
-  display: flexbox;
-  justify-content: space-between;
-  border-bottom-style: double;
-}
+   #h1{
+   font-size: 60px;
+   color: cadetblue;
+  }
+  #Resultado{
+      width: 514px;
+      font-size: xxx-large;
+      margin-left: 15px;
+      display: block;
+      height: 70px;
+      border: 4px chocolate;
+  }
+  .boton {
+      font-weight: 550;
+      color: white;
+      background-color: crimson;
+      margin: 20px;
+      font-size: 55px;
+      text-align: center;
+      width: 98px;
+      float: left;
+      
+  }
+  #contenedor{
+      width: 555px;
+      height: 480px;
+      background: burlywood;
+      margin: 0.5cm;
+      padding: 0.5cm;
+  }       
