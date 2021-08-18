@@ -5,15 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title> 
-</head>
+    <LINK REL=StyleSheet HREF="StyleCalcula.css" TYPE="text/css" MEDIA=screen>
+   </head>
 <body>
-    <h1> Calculadora básica </h1> 
-    <style> 
-        .boton {
-         border-radius: 10px;
-        }
-    </style>
-  
+    <h1 id=h1> Calculadora básica </h1> 
+   
+<div id="contenedor">
     <input type="text" id="Resultado">
     <div onclick="concatenar(7)" class="boton" >7</div>
     <div onclick="concatenar(8)" class="boton" >8</div>
@@ -31,7 +28,7 @@
     <div onclick="concatenar(0)" class="boton" >0</div> 
     <div onclick="concatenar('/')" class="boton" >/</div>
     <div onclick="evaluar()" class="boton" >=</div>
-
+</div>
     <script>
         
         var temporal = ""
@@ -50,6 +47,7 @@
         temporal = eval(temporal)
         Calculadora.getElementById("Resultado").value = temporal
         }
+       
     </script>
 </body>
 </html>
