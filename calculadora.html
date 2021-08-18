@@ -8,17 +8,17 @@
 </head>
 <body>
     <h1> Calculadora básica </h1> 
-<style> 
-  .boton {
-   border-radius: 10px;
-    }
+    <style> 
+        .boton {
+         border-radius: 10px;
+        }
     </style>
   
     <input type="text" id="Resultado">
     <div onclick="concatenar(7)" class="boton" >7</div>
     <div onclick="concatenar(8)" class="boton" >8</div>
     <div onclick="concatenar(9)" class="boton" >9</div>
-    <div onclick="borrar()" >c</div>
+    <div onclick="borrar()" class="boton" >c</div>
     <div onclick="concatenar(4)" class="boton" >4</div>
     <div onclick="concatenar(5)" class="boton" >5</div>
     <div onclick="concatenar(6)" class="boton" >6</div>
@@ -30,7 +30,8 @@
     <div onclick="concatenar('x')" class="boton" >x</div>
     <div onclick="concatenar(0)" class="boton" >0</div> 
     <div onclick="concatenar('/')" class="boton" >/</div>
-    <div onclick="evaluar()" >=</div>
+    <div onclick="evaluar()" class="boton" >=</div>
+
     <script>
         
         var temporal = ""
