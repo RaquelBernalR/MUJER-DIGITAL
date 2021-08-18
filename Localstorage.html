@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div>
+        <input type="text" id="micorreo" placeholder="ingresa tu correo">
+        <div onclick="Almacenaremail()">Guardar</div>
+        <div onclick="Traercorreo()">Cargar</div>
+        <div onclick="Borrartodo()">Borrartodo</div>
+    </div>
+
+    <script>
+
+        var Almacenaremail = function(){
+            var correo = document.getElementById("micorreo").value
+            localStorage.getIntem("email",correo)
+        }
+        var Traercorreo = function(){
+         var correo = localStorage.getItem("email")
+        }
+
+    </script>
+</body>
+</html>
