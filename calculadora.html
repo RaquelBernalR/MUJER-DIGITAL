@@ -4,50 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora</title> 
+    <title>Document</title>
     <LINK REL=StyleSheet HREF="StyleCalcula.css" TYPE="text/css" MEDIA=screen>
-   </head>
+</head>
+<h1 id=h1> Calculadora básica </h1> 
 <body>
-    <h1 id=h1> Calculadora básica </h1> 
-   
-<div id="contenedor">
-    <input type="text" id="Resultado">
-    <div onclick="concatenar(7)" class="boton" >7</div>
-    <div onclick="concatenar(8)" class="boton" >8</div>
-    <div onclick="concatenar(9)" class="boton" >9</div>
-    <div onclick="borrar()" class="boton" >c</div>
-    <div onclick="concatenar(4)" class="boton" >4</div>
-    <div onclick="concatenar(5)" class="boton" >5</div>
-    <div onclick="concatenar(6)" class="boton" >6</div>
-    <div onclick="concatenar('+')" class="boton" >+</div>
-    <div onclick="concatenar(1)" class="boton" >1</div>
-    <div onclick="concatenar(2)" class="boton" >2</div>
-    <div onclick="concatenar(3)" class="boton" >3</div>
-    <div onclick="concatenar('-')" class="boton" >-</div>
-    <div onclick="concatenar('x')" class="boton" >x</div>
-    <div onclick="concatenar(0)" class="boton" >0</div> 
-    <div onclick="concatenar('/')" class="boton" >/</div>
-    <div onclick="evaluar()" class="boton" >=</div>
+  <div id = "contenedor">   
+
+    <input type="text" id="resultado">
+
+    <div onclick="concatenar(7)" class="boton">7</div>
+    <div onclick="concatenar(8)" class="boton">8</div>
+    <div onclick="concatenar(9)" class="boton">9</div>
+    <div onclick="borrar()" class="boton">C</div>
+    <div onclick="concatenar(6)" class="boton">6</div>
+    <div onclick="concatenar(5)" class="boton">5</div>
+    <div onclick="concatenar(4)" class="boton">4</div>
+    <div onclick="concatenar('+')"  class="boton">+</div>
+    <div onclick="concatenar(3)" class="boton">3</div> 
+    <div onclick="concatenar(2)" class="boton">2</div>
+    <div onclick="concatenar(1)" class="boton">1</div>
+    <div onclick="concatenar('-')" class="boton">-</div>
+    <div onclick="concatenar('*')" class="boton">x</div> 
+    <div onclick="concatenar(0)" class="boton">0</div>
+    <div onclick="concatenar('/')" class="boton">/</div> 
+    <div onclick="evaluar()" class="boton">=</div> 
 </div>
-    <script>
-        
-        var temporal = ""
-        var concatenar = function(valor){
-        temporal = temporal + valor
-        console.log(temporal)
-        Calculadora.getElementById("Resultado").value = temporal
-        }
+<script>
+    var temporal = ""
+    var concatenar = function(valor){
+    temporal = temporal + valor
+    console.log(temporal)
+  
+    document.getElementById("resultado").value = temporal
+  
+   }
 
-        var borrar = function(){
-        temporal = ""
-        Calculadora.getElementById("Resultado").value = "" 
-        }
-
-        var evaluar = function(){
-        temporal = eval(temporal)
-        Calculadora.getElementById("Resultado").value = temporal
-        }
-       
-    </script>
+   var borrar = function(){
+    temporal = ""
+    document.getElementById("resultado").value = ""
+   }
+   
+   var evaluar = function(){
+    temporal = eval(temporal)
+    document.getElementById("resultado").value = temporal
+   }
+</script>
 </body>
 </html>
