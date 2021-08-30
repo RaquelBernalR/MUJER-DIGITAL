@@ -1,4 +1,4 @@
-.navbar {
+  .navbar {
     box-shadow: 2px 2px 5px rgb(42, 18, 97);
     opacity: 0.9;
   }
@@ -9,13 +9,14 @@
   
   .main-header {
     position: relative;
-    background: url(../img/background.jpg);
+    background: img/Joven positiva en Calll center.jpg;
     background-size: cover;
     min-height ;
+    border-radius: 60px;
   }
   
   .background-overlay {
-    background: rgba(24, 3, 48, 0.7);
+    background: rgba(153, 119, 190, 0.7);
     top: 0;
     left: 0;
     width: 100%;
@@ -27,8 +28,9 @@
   }
   
   .team, footer {
-    background: #2c023d;
+    background: #714b80;
   }
-#Franja{
-    width: 60px;
-}  
+   #row{
+    min-height: 200px;
+
+   }
