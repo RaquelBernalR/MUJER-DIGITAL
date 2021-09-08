@@ -1,0 +1,20 @@
+input{
+    background:red
+ }
+ body{
+    background: rosybrown
+
+ }
+ .equipodetrabajo{
+    top: 65px;
+    position: relative;
+    background: beige;
+    height: auto;
+    zoom: 75%;
+    padding-left: 124px;
+    padding-top: 25px;
+
+  }
+  .menugrande{
+      
+  }

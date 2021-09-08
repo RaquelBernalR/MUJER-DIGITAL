@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repaso2</title>
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./general.css">
+</head>
+<body>
+   
+      
+  <style>
+      
+        #persona_equipo{
+           background: lightpink;
+           width: auto;
+           margin-bottom: 0px;
+           height: 0px;
+           border-radius: 12px;
+           padding: 11px;
+           float: left;
+           margin: 12px;
+        }
+       
+        .megamenu{
+            display: flex;
+        }
+        .mostrar{
+        display: none;
+        }
+        .link.f1:hover > .mostrar{
+            display: block;
+        }
+        .link:hover{
+            background: black;
+        }
+        .clickaqui:hover{
+            color: red;
+        }
+        .clickaqui:hover > .desplegable{
+            display: block;
+            background: gray;
+        }
+        .desplegable{
+            display: none;
+            position: absolute;
+        }
+  </style>
+  <div class="clickaqui">clickaqui</div>
+  <div id="encabezado"></div>
+    <input type="text">
+    <input type="password">
+  <div id="equipodetrabajo"></div>
+    <div class="persona_equipo">
+      <img class="imagenpersona"src="./DIGITALES\imagenes\lunch" alt="persona">
+      <div class="nombre">Raquel Bernal</div>
+      <div class="cargo">Desarrollador</div>
+
+    </div>
+    <div class="persona_equipo">
+        <img class="imagenpersona"src="./DIGITALES\imagenes\lunch" alt="persona">
+        <div class="nombre">Raquel Bernal</div>
+        <div class="cargo">Desarrollador</div>
+    </div>
+    <div class="persona_equipo">
+        <img class="imagenpersona"src="./DIGITALES\imagenes\lunch" alt="persona">
+        <div class="nombre">Raquel Bernal</div>
+        <div class="cargo">Desarrollador</div>
+    </div>
+    <div class="persona_equipo">
+        <img class="imagenpersona"src="./DIGITALES\imagenes\lunch" alt="persona">
+        <div class="nombre">Raquel Bernal</div>
+        <div class="cargo">Desarrollador</div>
+    </div>
+    <div id="megamenu">
+        <div class="link f1">Categorias</div>
+        <div class="link f1">Datos</div>
+        <div class="link f1">Mi Perfil
+          <div class="mostrar">
+               <div class="link">Direcciones</div>
+               <div class="link">Password</div>
+               <div class="link">Cerrar Sesion</div>
+               <div class="link">Mis Pedidos</div>
+           </div>
+        </div>
+    </div>
+    <div id="menupequeno"></div>
+
+     @media(max-width:419px) and (min-width:0px){
+      body{
+       background:red;
+      }
+     }
+     @media(max-width:767px) and (min-width:420px){
+      body{
+       background:red;
+      }
+     }
+     @media(max-width:900px) and (min-width:768px){
+      body{
+       background:red;
+      }
+     }
+    </body>
+</html>
