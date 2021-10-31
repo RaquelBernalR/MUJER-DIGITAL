@@ -50,9 +50,38 @@ usuariosmodels.guardar(persona,function(respuesta){
 
 usuariosControllers.crearorden = function(request,response){
    
-    usuariosmodels.crearorden(request,function(respuesta){
-        response.json(respuesta)
-    })
+  //  usuariosmodels.crearorden(request,function(respuesta){
+  //      response.json(respuesta)
+  //  })
+   
+    var items = request.body;
+
+    var conerrores = 0;
+    var mensajes  = []; 
+
+    for (let index = 0; index < items.length; index ++) {
+
+        console.log('-----------------revisando ')
+         console.log(items[index])
+                
+        if  (items[index].cantidad <= 0 ){
+            conerrores = conerrores  +   1
+            mensaje.push({error:'la cantidad del item ' + (index) + ' no puede tener el valor' + items[index].id})
+        }
+        
+        if (items[index].id <= 0){
+            conerrores = conerrores  +   1
+            mensaje.push({error:'la cantidad del item ' + (index) + ' no puede tener el valor' + items[index].id}) 
+        }
+        
+
+        if (index == items.length  - 1){
+            if (conerrores > 0){
+                
+            }
+        }  
+    }
+
 }
 //SE CAMBIA POR usuariosmodels...ver 2 lineas arriba    
 //console.log(request.body)
